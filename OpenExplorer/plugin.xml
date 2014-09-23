@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+<!--
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="OpenExplorer.actionSet"
+            label="OpenExplorer Action Set"
+            visible="true">
+         <action
+               class="openexplorer.actions.OpenExplorerAction"
+               icon="icons/OpenExplorer.png"
+               id="openexplorer.actions.OpenExplorer"
+               label="&amp;OpenExplorer Action"
+               toolbarPath="OpenExplorer"
+               tooltip="Open Explorer">
+         </action>
+      </actionSet>
+   </extension>
+   -->
+   <extension
+         point="org.eclipse.ui.actionSets">
+         <actionSet
+            id="OpenClassExplorer.actionSet"
+            label="OpenClassExplorer Action Set"
+            visible="true">
+         <action
+               class="openexplorer.actions.OpenExplorerAction"
+               icon="icons/OpenExplorer.png"
+               id="openexplorer.actions.OpenClassExplorer"
+               label="&amp;OpenClassExplorer Action"
+               toolbarPath="OpenExplorer"
+               tooltip="Open Class Explorer">
+         </action>
+      </actionSet>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.popupMenus">
+         <objectContribution
+            objectClass="org.eclipse.core.runtime.IAdaptable"
+            id="OpenExplorer.popupMenuContribution">
+         <action
+               label="Open Explorer"
+               icon="icons/OpenExplorer.png"
+               class="openexplorer.actions.OpenExplorerPopupAction"
+               menubarPath="additions"
+               enablesFor="*"
+               id="OpenExplorer.popupMenuAction">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Open Explorer"
+            class="openexplorer.preferences.HomePreferencePage"
+            id="openexplorer.preferences.HomePreferencePage">
+      </page>
+      <page
+            id="openexplorer.preferences.FMPreferencePage"
+            class="openexplorer.preferences.FMPreferencePage"
+            name="File Manager"
+            category="openexplorer.preferences.HomePreferencePage">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="openexplorer.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+</plugin>
