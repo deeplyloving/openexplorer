@@ -7,6 +7,8 @@ Now Support Eclipse 3.2 and later, Mac OS X, Linux (with nautilus) and Windows.
 ## Screenshots
 <a href="http://blog.samsonis.me/wp-content/uploads/2009/02/openexplorer.png"><img style="border: medium none;" title="Open Explorer" src="http://blog.samsonis.me/wp-content/uploads/2009/02/openexplorer.png" alt="Open Explorer" width="300" height="216"></a>
 
+该版本经过修改,打开某一个java文件,焦点在该java文件上,点击上图所示位置,即可找到对应的.class文件
+
 ## Install/Uninstall
 [Download](http://github.com/samsonw/OpenExplorer/downloads "Download") the latest version of the plugin, then put it into your Eclipse plugin directory "$ECLIPSE_HOME/plugins" (or "$ECLIPSE_HOME/dropins" for 3.3+ eclipse)
 
